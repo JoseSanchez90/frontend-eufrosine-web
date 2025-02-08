@@ -18,11 +18,6 @@ const dataFooter = [
     },
     {
         id: 3,
-        name: "Aviso Legal",
-        link: "#",
-    },
-    {
-        id: 4,
         name: "Libro de Reclamaciones",
         link: "#",
     },

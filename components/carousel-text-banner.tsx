@@ -35,7 +35,7 @@ const CarouselTextBanner = () => {
     const router = useRouter()
 
     return ( 
-        <div className="bg-sky-200 dark:bg-sky-800">
+        <div className="bg-sky-100 dark:bg-sky-800">
             <Carousel className="w-full h-20 py-2 max-w-4xl mx-auto" plugins={[
                 Autoplay({
                     delay: 6000
@@ -47,17 +47,13 @@ const CarouselTextBanner = () => {
                             <div>
                                 <Card className="shadow-none border-none bg-transparent">
                                     <CardContent className="flex flex-col justify-center items-center">
-                                        <p className="flex flex-row justify-center items-center gap-2 text-sm sm:text-sm text-gray-500 dark:text-gray-200">
-                                            <FaBottleWater />
+                                        <p className="flex flex-row justify-center items-center gap-2 text-sm sm:text-sm font-medium text-gray-800 dark:text-gray-200">
                                             {name}
-                                            <FaBottleWater />
                                             </p>
-                                        <p className="flex flex-row justify-center items-center gap-2 text-sm sm:text-sm text-gray-500 dark:text-gray-200">
-                                            <FaBottleWater />
+                                        <p className="flex flex-row justify-center items-center gap-2 text-sm sm:text-sm font-medium text-gray-800 dark:text-gray-200">
                                             {description}
-                                            <FaBottleWater />
                                         </p>
-                                        <p className="text-sm sm:text-sm font-bold text-gray-800 dark:text-white">{oferta}</p>
+                                        <p className="text-sm sm:text-sm font-medium text-gray-800 dark:text-white">{oferta}</p>
                                     </CardContent>
                                 </Card>
                             </div>
