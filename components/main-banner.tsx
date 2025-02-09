@@ -99,9 +99,7 @@ const MainBanner = () => {
             </div>
 
             {/* BANNER TRES */}
-            <div>
-                <NewsBanner/>
-            </div>
+            <NewsBanner/>
         </>
      );
 }
