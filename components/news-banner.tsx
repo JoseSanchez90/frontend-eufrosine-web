@@ -71,7 +71,7 @@ const NewsBanner = () => {
                                 <div className="p-2">
                                     <Card>
                                         <CardContent className="flex flex-col aspect-square justify-center gap-4 p-6 dark:bg-blue-950 bg-blue-50 rounded-lg">
-                                            <Image src={image} alt="img-noticia" width={300} height={300} className="rounded-lg" />
+                                            <Image src={image} alt="img-noticia" width={300} height={300} className="rounded-lg bg-cover bg-no-repeat w-full" />
                                             <h2 className="text-base sm:text-md font-bold text-center text-gray-800 dark:text-gray-200">{name}</h2>
                                             <p className="text-sm font-normal">{description}</p>
                                             <a href={link} target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 underline text-start">Leer más</a>
