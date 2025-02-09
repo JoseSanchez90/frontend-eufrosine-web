@@ -26,7 +26,7 @@ const dataFooter = [
 const Footer = () => {
 
     return ( 
-        <footer className="mt-4">
+        <footer className="my-4">
             <Separator/>
             <div className="grid grid-cols-2 gap-4 md:gap-0 md:grid-cols-5 mx-auto p-4 py-2 md:py-4 justify-between ">
                 

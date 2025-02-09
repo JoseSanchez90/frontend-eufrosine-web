@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 import { Card, CardContent } from "./ui/card";
 import Autoplay from "embla-carousel-autoplay"
-import { FaBottleWater } from "react-icons/fa6";
 
 export const DataCarouselTop = [
     {
@@ -38,7 +37,7 @@ const CarouselTextBanner = () => {
         <div className="bg-sky-100 dark:bg-sky-800">
             <Carousel className="w-full h-20 py-2 max-w-4xl mx-auto" plugins={[
                 Autoplay({
-                    delay: 6000
+                    delay: 5000,
                 })
             ]}>
                 <CarouselContent>

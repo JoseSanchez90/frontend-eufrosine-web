@@ -4,9 +4,9 @@ import Image from "next/image";
 import hombreAnimado from "../app/img/hombre-animado.png"
 import { Button } from "./ui/button";
 import { BsArrowRight, BsCart } from "react-icons/bs";
-import lottie from "lottie-web"
 import bottle from "../app/img/bottle.json"
 import { useEffect, useRef } from "react";
+import NewsBanner from "./news-banner";
 
 const MainBanner = () => {
 
@@ -29,12 +29,13 @@ const MainBanner = () => {
 
     return ( 
         <>
-            <div className="w-full flex justify-center pb-40">
-                <div className="grid grid-cols-2 items-center mx-auto px-40">
+            {/* BANNER PRINCIPAL */}
+            <div className="w-full flex justify-center py-10 px-10 sm:py-10 sm:px-40">
+                <div className="grid sm:grid-cols-2 gap-10 sm:gap-0 items-center mx-auto">
                     <div className="flex flex-col mx-auto gap-5">
                         <div>
-                            <h2 className="text-3xl font-bold text-blue-800 dark:text-blue-500">AGUA PURA</h2>
-                            <h2 className="text-3xl font-bold text-blue-800 dark:text-blue-500">BIENESTAR EN TU VIDA</h2>
+                            <h2 className="text-2xl sm:text-3xl font-bold text-blue-800 dark:text-blue-500">AGUA PURA</h2>
+                            <h2 className="text-2xl sm:text-3xl font-bold text-blue-800 dark:text-blue-500">BIENESTAR EN TU VIDA</h2>
                         </div>
                         <div>
                             <p className="font-medium dar:text-white">Descubre la frescura y pureza en cada gota con Agua <span className="text-blue-800 dark:text-blue-600 text-lg">Eu<span className="font-bold">Frosine</span></span>, tu fuente confiable de agua de mesa de alta calidad.</p>
@@ -50,50 +51,56 @@ const MainBanner = () => {
                 </div>
             </div>
 
-            <div className="w-full flex flex-col justify-center pb-40 gap-20">
+            {/* BANNER DOS */}
+            <div className="w-full flex flex-col justify-center mx-auto py-20 px-5 sm:px-0 sm:py-20 sm:gap-10 gap-5">
                 <div className="flex flex-col justify-center items-center gap-2">
                     <h2 className="font-bold text-3xl">COMPOSICION DEL <span className="text-blue-800">AGUA</span></h2>
-                    <h3 className="font-bold text-lg text-blue-600 italic">¿QUE HAY DENTRO?</h3>
+                    <h3 className="font-semibold text-lg text-blue-600 italic">¿QUE HAY DENTRO?</h3>
                 </div>
-                <div className="grid grid-cols-3 justify-center items-center px-40">
-                        <div className="flex flex-col justify-center text-end mx-20 gap-10 text-sm">
-                            <div className="flex flex-col gap-1">
-                                <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Calcio Ca2+</h3>
-                                <p className="font-bold text-blue-600 dark:text-blue-400 text-md">240 mg/L</p>
-                                <p className="font-medium text-xs dark:text-white">Alrededor del 99% del calcio en nuestros cuerpos está en nuestros huesos y dientes.</p>
-                            </div>
-                            <div className="flex flex-col gap-1">
-                                <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Magnesio Mg2+</h3>
-                                <p className="font-bold text-blue-600 dark:text-blue-400 text-md">42 mg/L</p>
-                                <p className="font-medium text-xs dark:text-white">El magnesio es un nutriente que el cuerpo necesita para mantenerse saludable.</p>
-                            </div>
-                            <div className="flex flex-col gap-1">
-                                <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Sodio Na+</h3>
-                                <p className="font-bold text-blue-600 dark:text-blue-400 text-md">5.2 mg/L</p>
-                                <p className="font-medium text-xs dark:text-white">Es un componente importante para la función muscular y nerviosa adecuada.</p>
-                            </div>
+                <div className="flex flex-col sm:grid sm:grid-cols-3 justify-center items-center gap-5 sm:gap-0">
+                    <div className="flex flex-col justify-center text-start sm:text-end sm:pl-40 gap-5 sm:gap-10 text-sm">
+                        <div className="flex flex-col gap-1">
+                            <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Calcio Ca2+</h3>
+                            <p className="font-bold text-blue-600 dark:text-blue-400 text-md">240 mg/L</p>
+                            <p className="font-medium text-xs dark:text-white">El calcio es un mineral esencial para la formación y mantenimiento de huesos y dientes.</p>
                         </div>
-                        <div className="flex justify-center items-center">
-                            <div ref={animationContainer}></div>
+                        <div className="flex flex-col gap-1">
+                            <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Magnesio Mg2+</h3>
+                            <p className="font-bold text-blue-600 dark:text-blue-400 text-md">42 mg/L</p>
+                            <p className="font-medium text-xs dark:text-white">El magnesio es un nutriente importante para diversas funciones del cuerpo, incluyendo la función muscular y nerviosa.</p>
                         </div>
-                        <div className="flex flex-col justify-center text-start mx-20 gap-10 text-sm">
-                            <div className="flex flex-col gap-1">
-                                <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Sulfato SO4(2-)</h3>
-                                <p className="font-bold text-blue-600 dark:text-blue-400 text-md">400 mg/L</p>
-                                <p className="font-medium text-xs dark:text-white">El sulfato se encuentra entre los macronutrientes más importantes en las células.</p>
-                            </div>
-                            <div className="flex flex-col gap-1">
-                                <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Nitrato NO3-</h3>
-                                <p className="font-bold text-blue-600 dark:text-blue-400 text-md">4.4 mg/L</p>
-                                <p className="font-medium text-xs dark:text-white">Es genial para la salud beber agua con niveles de nitrato por debajo de 10 mg/L.</p>
-                            </div>
-                            <div className="flex flex-col gap-1">
-                                <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Bicarbonato</h3>
-                                <p className="font-bold text-blue-600 dark:text-blue-400 text-md">384 mg/L</p>
-                                <p className="font-medium text-xs dark:text-white">El bicarbonato es un antiácido que se usa para aliviar la acidez estomacal y la indigestión ácida.</p>
-                            </div>
+                        <div className="flex flex-col gap-1">
+                            <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Sodio Na+</h3>
+                            <p className="font-bold text-blue-600 dark:text-blue-400 text-md">5.2 mg/L</p>
+                            <p className="font-medium text-xs dark:text-white">El sodio es un electrolito que juega un papel en la regulación del equilibrio de líquidos y la función nerviosa y muscular.</p>
                         </div>
+                    </div>
+                    <div className="flex justify-center items-center text-center">
+                        <div ref={animationContainer}></div>
+                    </div>
+                    <div className="flex flex-col justify-center text-start sm:pr-40 gap-5 sm:gap-10 text-sm">
+                        <div className="flex flex-col gap-1">
+                            <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Sulfato SO4(2-)</h3>
+                            <p className="font-bold text-blue-600 dark:text-blue-400 text-md">400 mg/L</p>
+                            <p className="font-medium text-xs dark:text-white">El sulfato es un macronutriente presente en las células y participa en diversas funciones metabólicas.</p>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Nitrato NO3-</h3>
+                            <p className="font-bold text-blue-600 dark:text-blue-400 text-md">4.4 mg/L</p>
+                            <p className="font-medium text-xs dark:text-white">El nitrato es un compuesto que se encuentra en el agua y puede ser perjudicial en concentraciones elevadas. La imagen indica que es saludable beber agua con niveles de nitrato por debajo de 10 mg/L.</p>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Bicarbonato HCO3-</h3>
+                            <p className="font-bold text-blue-600 dark:text-blue-400 text-md">384 mg/L</p>
+                            <p className="font-medium text-xs dark:text-white">El bicarbonato es un antiácido natural que ayuda a neutralizar el ácido estomacal y aliviar la acidez y la indigestión.</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            {/* BANNER TRES */}
+            <div>
+                <NewsBanner/>
             </div>
         </>
      );
