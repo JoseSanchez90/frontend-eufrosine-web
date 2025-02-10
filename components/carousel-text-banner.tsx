@@ -31,8 +31,8 @@ const CarouselTextBanner = () => {
     const router = useRouter()
 
     return ( 
-        <div className="w-full bg-sky-100 dark:bg-sky-800">
-            <Carousel className="w-full h-20 py-2 max-w-3xl mx-auto" plugins={[
+        <div className="bg-sky-100 dark:bg-sky-800">
+            <Carousel className="w-full h-20 py-2 max-w-4xl mx-auto" plugins={[
                 Autoplay({
                     delay: 6000,
                 })
