@@ -39,7 +39,7 @@ const MenuList = () => {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/quienes-somos" title="Quienes somos">
+              <ListItem href="/nosotros" title="Quienes somos">
                 Conoce un poco más acerca de nosotros.
               </ListItem>
               <ListItem href="/mision-vision" title="Mision y Vision">
@@ -68,7 +68,7 @@ const MenuList = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/contactanos" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Contactanos
             </NavigationMenuLink>
