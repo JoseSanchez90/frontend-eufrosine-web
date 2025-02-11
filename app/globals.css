@@ -57,18 +57,7 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
-/* BG-CARD-1 */
+  /* BG-CARD-1 */
 @keyframes hero-gradient-animation {
   0% {
       --s-start-0: 9%;
@@ -402,3 +391,28 @@
   animation: hero-gradient-animation 5s linear infinite alternate-reverse;
   background-blend-mode: normal, normal, normal, normal;
 }
+
+/* BG-CARD-MOVIL-1 */
+.bg-card-movil-1 {
+  background-color: hsla(260, 100%, 46%, 0.95);
+  background-image: radial-gradient(circle at 49% 75%, hsla(200, 86%, 56%, 1) 13%, transparent 61%), radial-gradient(circle at 58% 11%, hsla(271.9148936170212, 99%, 53%, 1) 13%, transparent 61%);
+  background-blend-mode: normal, normal;
+}
+
+/* BG-CARD-MOVIL-2 */
+.bg-card-movil-2 {
+  background-color: hsla(219.44116031422334, 100%, 50%, 1);
+  background-image: radial-gradient(circle at 0% 99%, hsla(181.0588073730469, 100%, 50%, 1) 0%, transparent 67%), radial-gradient(circle at 46% 94%, hsla(357, 100%, 50%, 0) 0%, transparent 81%), radial-gradient(circle at 93% 95%, hsla(266, 100%, 23%, 0) 0%, transparent 66%), radial-gradient(circle at 89% 8%, hsla(236, 100%, 9%, 0) 0%, transparent 150%);
+  background-blend-mode: normal, normal, normal, normal;
+}
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
