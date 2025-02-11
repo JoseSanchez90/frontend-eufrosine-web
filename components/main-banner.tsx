@@ -38,7 +38,7 @@ const MainBanner = () => {
                             <h2 className="text-2xl sm:text-3xl font-bold text-blue-800 dark:text-blue-500">BIENESTAR EN TU VIDA</h2>
                         </div>
                         <div>
-                            <p className="font-medium dar:text-white">Descubre la frescura y pureza en cada gota con Agua <span className="text-blue-800 dark:text-blue-600 text-lg">Eu<span className="font-bold">Frosine</span></span>, tu fuente confiable de agua de mesa de alta calidad.</p>
+                            <p className="font-medium">Descubre la frescura y pureza en cada gota con Agua <span className="text-blue-800 dark:text-blue-600 text-lg">Eu<span className="font-bold">Frosine</span></span>, tu fuente confiable de agua de mesa de alta calidad.</p>
                         </div>
                         <div className="flex flex-row gap-5">
                             <Button className="dark:text-white hover:bg-blue-800 dark:hover:bg-blue-800 px-6">Ordenar ahora<BsCart/></Button>

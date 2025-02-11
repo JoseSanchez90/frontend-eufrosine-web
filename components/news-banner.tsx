@@ -64,7 +64,7 @@ const NewsBanner = () => {
                     <p className="font-semibold text-lg text-blue-600 italic text-center">Aquí te mostramos algunas de las ultimas noticias con respecto al agua entre otros.</p>
                 </div>
                 <div className="bg-transparent">
-                    <Carousel opts={{align: "start"}} plugins={[Autoplay({delay: 4000})]} className="w-full max-w-sm sm:max-w-6xl mx-auto">
+                    <Carousel plugins={[Autoplay({delay: 4000})]} className="w-full max-w-sm sm:max-w-6xl mx-auto">
                         <CarouselContent className="-ml-2 md:-ml-4">
                             {CarouselBanner.map(({id, image, name, description, link}) => (
                             <CarouselItem key={id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
