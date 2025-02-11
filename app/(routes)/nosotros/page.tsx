@@ -30,7 +30,7 @@ function page() {
       <div className="grid grid-cols-1 sm:grid-cols-2 sm:py-10 py-10 gap-10 sm:gap-0">
         <div className="w-full sm:h-96 flex flex-col gap-5 justify-center px-5 sm:px-20">
             <h2 className="max-w-2xl text-2xl sm:text-3xl font-bold text-center">QUIENES <span className="text-2xl sm:text-3xl font-bold text-blue-800 dark:text-blue-500">SOMOS</span></h2>
-            <p className="font-medium text-center">Somos una empresa recientemente formada, dedicada a proporcionar agua de la más alta calidad para tu bienestar diario. Ofrecemos a nuestra comunidad un producto esencial de la más alta calidad. Nuestra historia es una de
+            <p className="font-medium text-center">Somos una empresa con innovacion de la más alta tecnología en purificación de agua, dedicada a proporcionar agua de la más alta calidad para tu bienestar diario. Ofrecemos a nuestra comunidad un producto esencial de la más alta calidad. Nuestra historia es una de
             pasión, innovación y compromiso con el bienestar de nuestros clientes</p>
         </div>
         <div className="flex justify-center bg-cover">
