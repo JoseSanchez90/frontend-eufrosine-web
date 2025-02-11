@@ -46,7 +46,7 @@ const MainBanner = () => {
                         </div>
                     </div>
                     <div className="flex justify-center">
-                        <Image src={hombreAnimado} alt="vaso" width={500}></Image>
+                        <Image src={hombreAnimado} alt="vaso" width={500} className="sm:w-[500px] w-[300px]"></Image>
                     </div>
                 </div>
             </div>
