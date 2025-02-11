@@ -21,10 +21,10 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
     <html lang="en" suppressHydrationWarning>
       <body className={`${urbanist.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-            <Navbar/>
-            {children}
-            <Footer/>
-          </ThemeProvider>
+          <Navbar/>
+          {children}
+          <Footer/>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -38,7 +38,7 @@ const MainBanner = () => {
                             <h2 className="text-xl sm:text-3xl font-bold text-blue-800 dark:text-blue-500">BIENESTAR EN TU VIDA</h2>
                         </div>
                         <div>
-                            <p className="text-sm sm:text-base font-medium">Descubre la frescura y pureza en cada gota con Agua <span className="text-blue-800 dark:text-blue-600 text-lg">Eu<span className="font-bold">Frosine</span></span>, tu fuente confiable de agua de mesa de alta calidad.</p>
+                            <p className="text-sm sm:text-base font-medium">Descubre la frescura y pureza en cada gota con Agua <span className="text-blue-800 dark:text-blue-600 text-lg">Eu<span className="text-md font-bold">Frosine</span></span>, tu fuente confiable de agua de mesa de alta calidad.</p>
                         </div>
                         <div className="flex flex-row gap-5">
                             <Button className="text-sm sm:text-base dark:text-white hover:bg-blue-800 dark:hover:bg-blue-800 px-6">Ordenar ahora<BsCart/></Button>
@@ -46,7 +46,7 @@ const MainBanner = () => {
                         </div>
                     </div>
                     <div className="flex justify-center">
-                        <Image src={hombreAnimado} alt="vaso" width={500} className="sm:w-[500px] w-[300px]"></Image>
+                        <Image src={hombreAnimado} alt="vaso" className="sm:w-[500px] w-[300px]" priority />
                     </div>
                 </div>
             </div>
