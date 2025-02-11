@@ -13,7 +13,7 @@ const VisionMision = () => {
               <CardItem translateZ="50" className="text-xl sm:text-3xl font-bold text-white">
                 Visión
               </CardItem>
-              <CardItem as="p" translateZ="60" className="text-white text-sm sm:text-base max-w-sm mt-2 ">
+              <CardItem as="p" translateZ="60" className="text-white text-center sm:text-start text-sm sm:text-base max-w-sm mt-2 ">
                 Ser reconocidos como la empresa líder en la provisión de agua de mesa de la más alta calidad,
                 contribuyendo al bienestar y salud de nuestras comunidades, mientras establecemos nuevos estándares de
                 excelencia e innovación en la industria.
@@ -26,10 +26,8 @@ const VisionMision = () => {
               <CardItem translateZ="50" className="text-xl sm:text-3xl font-bold text-white">
                 Misión
               </CardItem>
-              <CardItem as="p" translateZ="60" className="text-white text-sm sm:text-base max-w-sm mt-2">
-                Proporcionar agua de mesa pura y refrescante, utilizando tecnología de vanguardia y procesos
-                sostenibles. Nos comprometemos a satisfacer las necesidades de hidratación de nuestros clientes,
-                garantizando la más alta calidad y seguridad.
+              <CardItem as="p" translateZ="60" className="text-white text-center sm:text-start text-sm sm:text-base max-w-sm mt-2">
+                Proporcionar agua de mesa pura y refrescante, utilizando tecnología de vanguardia y procesos sostenibles. Nos comprometemos a satisfacer las necesidades de hidratación de nuestros clientes, garantizando la más alta calidad y seguridad.
               </CardItem>
             </CardBody>
           </CardContainer>
