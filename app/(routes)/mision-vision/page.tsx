@@ -3,7 +3,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card"
 const VisionMision = () => {
   return (
     <section className="w-full py-10 sm:py-20">
-      <div className="px-2 sm:px-6">
+      <div className="flex flex-col sm:gap-10 gap-0 px-2 sm:px-6">
         <h2 className="text-xl sm:text-3xl font-bold text-center">
           NUESTRA <span className="text-blue-800 dark:text-blue-500">VISION Y MISION</span>
         </h2>
