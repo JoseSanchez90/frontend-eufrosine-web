@@ -57,11 +57,11 @@ const NewsBanner = () => {
     const router = useRouter()
 
     return ( 
-        <div className="w-full h-full flex flex-col justify-center items-center pt-20 sm:pb-10">
+        <div className="w-full flex justify-center items-center py-5 sm:py-10">
             <div className="flex flex-col gap-10 ">
                 <div className="flex flex-col justify-center items-center gap-5 sm:gap-2 px-5 sm:px-20">
-                    <h2 className="font-bold text-3xl text-center">NUESTRAS ULTIMAS <span className="text-blue-800">NOTICIAS</span></h2>
-                    <p className="font-semibold text-lg text-blue-600 italic text-center">Aquí te mostramos algunas de las ultimas noticias con respecto al agua entre otros.</p>
+                    <h2 className="font-bold text-xl sm:text-3xl text-center">NUESTRAS ULTIMAS <span className="text-blue-800">NOTICIAS</span></h2>
+                    <p className="font-semibold text-md sm:text-lg text-blue-600 italic text-center">Aquí te mostramos algunas de las ultimas noticias con respecto al agua entre otros.</p>
                 </div>
                 <div className="bg-transparent">
                     <Carousel plugins={[Autoplay({delay: 4000})]} className="w-full max-w-sm sm:max-w-6xl mx-auto">
@@ -71,7 +71,7 @@ const NewsBanner = () => {
                                 <div className="p-2">
                                     <Card className="border-none">
                                         <CardContent className="flex flex-col aspect-square justify-between gap-4 p-6 dark:bg-blue-950 bg-blue-50 rounded-lg">
-                                            <Image src={image} alt="img-noticia" width={300} height={300} className="rounded-lg bg-cover bg-no-repeat w-full" />
+                                            <Image src={image} alt="img-noticia" width={300} height={300} className="rounded-lg bg-cover bg-no-repeat w-full h-[200px] object-cover" />
                                             <h2 className="text-base sm:text-md font-bold text-center text-gray-800 dark:text-gray-200">{name}</h2>
                                             <p className="text-sm font-normal">{description}</p>
                                             <a href={link} target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 underline text-start">Leer más</a>
