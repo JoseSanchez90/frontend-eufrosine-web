@@ -17,8 +17,7 @@ const ItemsMenuMobile = () => {
                 <div className="flex flex-col gap-2">
                     <Link href="/nosotros" className="block" onClick={closePopover}>Quienes Somos</Link>
                     <Link href="/mision-vision" className="block" onClick={closePopover}>Mision / Vision</Link>
-                    <Link href="/blog" className="block" onClick={closePopover}>Blog</Link>
-                    <Link href="/nuestros-productos" className="block" onClick={closePopover}>Nuestros Productos</Link>
+                    <Link href="/productos" className="block" onClick={closePopover}>Nuestros Productos</Link>
                 </div>
             </PopoverContent>
         </Popover>

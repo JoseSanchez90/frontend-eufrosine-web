@@ -23,14 +23,11 @@ const MenuList = () => {
           <NavigationMenuTrigger>Sobre nosotros</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
+              <li className="row-span-2">
                 <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <Image src={eufrosine} alt="Logo de la empresa" width={100} />
-                    <div className="mb-2 mt-4 text-lg font-bold">
+                  <a className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md" href="/">
+                    <Image src={eufrosine} alt="Logo de la empresa" width={60} />
+                    <div className="my-2 text-lg font-bold">
                       EuFrosine
                     </div>
                     <p className="text-sm text-gray-600 italic font-semibold leading-tight text-muted-foreground">
@@ -44,9 +41,6 @@ const MenuList = () => {
               </ListItem>
               <ListItem href="/mision-vision" title="Mision y Vision">
                 Te contamos cuales son nuestras priopridades.
-              </ListItem>
-              <ListItem href="/blog" title="Blog">
-                Explora y conoce más acerca del Agua de Mesa.
               </ListItem>
             </ul>
           </NavigationMenuContent>
@@ -104,7 +98,7 @@ const components: { title: string; href: string; description: string }[] = [
     },
     {
       title: "Explorar",
-      href: "/docs/primitives/scroll-area",
+      href: "/productos",
       description: "Encuentra todos nuestros productos."
     },
 ]
