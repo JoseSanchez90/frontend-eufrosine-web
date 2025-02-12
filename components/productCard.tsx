@@ -19,39 +19,39 @@ export function ProductCard({ title, description, imageUrl, price, offerPrice }:
   }
 
   return (
-    <Card className="w-[300px] overflow-hidden">
+    <Card className="w-[300px] overflow-hidden border-2 border-blue-100 dark:border-blue-950">
       <div className="relative h-48 w-full">
         <Image
           src={imageUrl}
           alt={title}
           layout="fill"
           objectFit="cover"
-          className="transition-transform duration-300 ease-in-out hover:scale-110"
+          className="transition-transform duration-300 ease-in-out lg:hover:scale-110"
         />
         {offerPrice && price && offerPrice < price && (
-          <Badge className="absolute top-2 right-2 bg-red-500">{discount}% Descuento</Badge>
+          <Badge className="absolute top-2 right-2 bg-red-500">{discount}% Dscto</Badge>
         )}
       </div>
       <CardHeader>
-        <CardTitle className="text-xl">{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardTitle className="text-xl font-semibold text-blue-800 dark:text-blue-500">{title}</CardTitle>
+        <CardDescription className="text-blue-900 dark:text-blue-300">{description}</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="flex items-center justify-between">
           <div className="flex items-baseline gap-2">
             {offerPrice && price && offerPrice < price ? (
               <>
-                <span className="text-2xl font-bold">{formatPrice(offerPrice)}</span>
-                <span className="text-sm text-muted-foreground line-through">{formatPrice(price)}</span>
+                <span className="text-lg text-blue-800 dark:text-blue-200 font-bold">{formatPrice(offerPrice)}</span>
+                <span className="text-sm  font-semibold text-muted-foreground line-through">{formatPrice(price)}</span>
               </>
             ) : (
-              <span className="text-2xl font-bold">{formatPrice(price)}</span>
+              <span className="text-lg text-blue-800 dark:text-blue-200 font-bold">{formatPrice(price)}</span>
             )}
           </div>
         </div>
       </CardContent>
       <CardFooter>
-        <Button className="w-full">Solicitar</Button>
+        <Button className="w-full">Comprar</Button>
       </CardFooter>
     </Card>
   )
