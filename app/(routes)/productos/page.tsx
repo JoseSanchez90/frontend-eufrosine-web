@@ -1,6 +1,8 @@
+"use client"
+
 import { ProductCard } from "@/components/productCard"
 
-const PageProducts = () => {
+const Products = () => {
   return (
     <main className="min-h-screen p-8 flex flex-col items-center sm:gap-5 sm:pt-10">
       <h1 className="text-xl sm:text-3xl font-bold text-center mb-8">NUESTROS <span className="text-xl sm:text-3xl font-bold text-blue-800 dark:text-blue-500">PRODUCTOS</span></h1>
@@ -38,4 +40,4 @@ const PageProducts = () => {
   )
 }
 
-export default PageProducts
+export default Products

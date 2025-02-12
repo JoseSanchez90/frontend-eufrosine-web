@@ -21,7 +21,7 @@ const CompanyBanners = [
   },
 ]
 
-function page() {
+const Nosotros = () => {
 
   const router = useRouter()
 
@@ -55,4 +55,4 @@ function page() {
   
 }
 
-export default page
+export default Nosotros
