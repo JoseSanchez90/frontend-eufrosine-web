@@ -31,7 +31,7 @@ const Products = () => {
         <ProductCard
           title="Bidon 2"
           description="Descripcion Bidon 2."
-          imageUrl="/app/img/bottle.png  "
+          imageUrl="/app/img/bottle.png"
           price={25.90}
           offerPrice={null}
         />
