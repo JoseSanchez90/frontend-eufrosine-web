@@ -57,7 +57,7 @@ const NewsBanner = () => {
     const router = useRouter()
 
     return ( 
-        <div className="w-full flex justify-center items-center py-10">
+        <div className="w-full flex justify-center items-center py-16">
             <div className="flex flex-col gap-10 ">
                 <div className="flex flex-col justify-center items-center gap-5 sm:gap-2 px-5 sm:px-20">
                     <h2 className="font-bold text-xl sm:text-3xl text-center">NUESTRAS ULTIMAS <span className="text-blue-800 dark:text-blue-500">NOTICIAS</span></h2>

@@ -16,7 +16,7 @@ const ItemsMenuMobile = () => {
             <PopoverContent onClick={() => setOpen(!open)}>
                 <div className="flex flex-col gap-2">
                     <Link href="/nosotros" className="block" onClick={closePopover}>Quienes Somos</Link>
-                    <Link href="/mision-vision" className="block" onClick={closePopover}>Mision / Vision</Link>
+                    <Link href="/mision-vision" className="block" onClick={closePopover}>Mision y Vision</Link>
                     <Link href="/productos" className="block" onClick={closePopover}>Nuestros Productos</Link>
                     <Link href="/contactanos" className="block" onClick={closePopover}>Contactanos</Link>
                 </div>
