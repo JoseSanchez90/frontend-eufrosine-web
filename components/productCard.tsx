@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { SiWhatsapp } from "react-icons/si"
 
 interface ProductCardProps {
   title: string
@@ -19,7 +20,7 @@ export function ProductCard({ title, description, imageUrl, price, offerPrice }:
   }
 
   return (
-    <Card className="w-[300px] overflow-hidden border-2 border-blue-100 dark:border-blue-950">
+    <Card className="w-[300px] overflow-hidden bg-blue-50 dark:bg-blue-950 border-blue-100 dark:border-blue-950">
       <div className="relative h-48 w-full">
         <Image
           src={imageUrl}
@@ -51,7 +52,7 @@ export function ProductCard({ title, description, imageUrl, price, offerPrice }:
         </div>
       </CardContent>
       <CardFooter>
-        <a href="https://api.whatsapp.com/send?phone=51903565918"><Button className="w-full">Comprar</Button></a>
+        <a href="https://api.whatsapp.com/send?phone=51903565918" target="_blank"><Button className="text-sm sm:text-base dark:text-white bg-green-600 hover:bg-green-500 dark:bg-green-600 dark:hover:bg-green-500 px-6"><SiWhatsapp/> Solicitar ahora</Button></a>
       </CardFooter>
     </Card>
   )

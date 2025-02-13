@@ -12,7 +12,7 @@ const Navbar = () => {
     const router = useRouter()
 
     return ( 
-        <div className="flex flex-row justify-between items-center p-4 md:px-48 mx-auto">
+        <div className="flex flex-row justify-between items-center p-4 md:px-12 lg:px-48 mx-auto">
             <h1 className="text-2xl text-blue-800 dark:text-blue-600 font-normal cursor-pointer" onClick={() => router.push("/")}>Eu<span className="text-3xl font-bold">Frosine</span></h1>
             <div className="items-center justify-between hidden sm:flex">
                 <MenuList/>

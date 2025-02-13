@@ -9,7 +9,7 @@ const VisionMision = () => {
         <h2 className="text-xl sm:text-3xl font-bold text-center">
           NUESTRA <span className="text-blue-800 dark:text-blue-500">VISION Y MISION</span>
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           <CardContainer>
             <CardBody className="bg-card-movil-1 sm:bg-vision relative w-[350px] h-[260px] sm:w-[600px] sm:h-[300px] rounded-xl p-6 border-none flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-10">
               <CardItem translateZ="50" className="text-xl sm:text-3xl font-bold text-white">
