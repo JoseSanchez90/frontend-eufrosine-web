@@ -51,7 +51,7 @@ export function ProductCard({ title, description, imageUrl, price, offerPrice }:
         </div>
       </CardContent>
       <CardFooter>
-        <Button className="w-full">Comprar</Button>
+        <a href="https://api.whatsapp.com/send?phone=51903565918"><Button className="w-full">Comprar</Button></a>
       </CardFooter>
     </Card>
   )

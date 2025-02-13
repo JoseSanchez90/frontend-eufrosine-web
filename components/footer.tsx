@@ -26,7 +26,7 @@ const dataFooter = [
 const Footer = () => {
 
     return ( 
-        <footer className="w-full h-full">
+        <footer className="w-full h-full mt-6">
             <Separator/>
             <div className="grid grid-cols-2 gap-4 md:grid-cols-5 mx-auto p-4 py-2 sm:py-6 justify-between ">
                 
@@ -72,7 +72,6 @@ const Footer = () => {
                     <div>
                         <h3 className="py-2 font-bold">Siguenos</h3>
                         <div className="flex flex-col items-start mb-6 gap-1 text-sm sm:mb-0">
-                            <Link href="#" className="flex flex-row items-center gap-2"><BsWhatsapp/><span>WhatsApp</span></Link>
                             <Link href="#" className="flex flex-row items-center gap-2"><BsFacebook/><span>Facebook</span></Link>
                             <Link href="#" className="flex flex-row items-center gap-2"><BsInstagram/><span>Instagram</span></Link>
                         </div>

@@ -58,6 +58,7 @@
     --chart-5: 340 75% 55%;
   }
 
+  /* BG-CONTACT */
   @keyframes bg-contact {
     0% {
         --x-0: 3%;

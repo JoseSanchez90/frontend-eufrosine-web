@@ -36,7 +36,7 @@ const Nosotros = () => {
           <Carousel opts={{align: "start"}} plugins={[Autoplay({delay: 4000})]} orientation="vertical" className="w-full max-w-sm sm:max-w-2xl sm:px-20">
             <CarouselContent className="-mt-1 h-[200px] sm:h-[400px]">
               {CompanyBanners.map(({id, image}) => (
-                <CarouselItem key={id} className="pt-1 md:basis-1/2">
+                <CarouselItem key={id} className="pt-1 2xl:basis-1/2">
                   <div className="p-1">
                     <Card className="border-none">
                       <CardContent className="flex items-center justify-center p-1">
