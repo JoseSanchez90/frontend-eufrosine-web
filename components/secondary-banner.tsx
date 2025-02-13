@@ -36,7 +36,7 @@ const SecondaryBanner = () => {
                 <h3 className="font-semibold text-md sm:text-lg text-blue-600 italic text-center">¿QUE HAY DENTRO?</h3>
             </div>
             <div className="flex flex-col sm:grid sm:grid-cols-3 justify-center items-center gap-5 sm:gap-0">
-                <div className="flex flex-col justify-center text-start sm:text-end sm:pl-40 gap-5 sm:gap-10 text-sm">
+                <div className="flex flex-col justify-center text-start sm:text-end sm:pl-10 lg:pl-40 gap-5 sm:gap-10 text-sm">
                     <div className="flex flex-col gap-1">
                         <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Calcio Ca2+</h3>
                         <p className="font-bold text-blue-600 dark:text-blue-400 text-md">240 mg/L</p>
@@ -56,7 +56,7 @@ const SecondaryBanner = () => {
                 <div className="flex justify-center items-center text-center">
                     <div ref={animationContainer}></div>
                 </div>
-                <div className="flex flex-col justify-center text-start sm:pr-40 gap-5 sm:gap-10 text-sm">
+                <div className="flex flex-col justify-center text-start sm:pr-10 lg:pr-40 gap-5 sm:gap-10 text-sm">
                     <div className="flex flex-col gap-1">
                         <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Sulfato SO4(2-)</h3>
                         <p className="font-bold text-blue-600 dark:text-blue-400 text-md">400 mg/L</p>

@@ -16,8 +16,8 @@ const MainBanner = () => {
     return ( 
         <>
             {/* BANNER PRINCIPAL */}
-            <div className="w-full flex justify-center py-16 px-10 sm:py-10 sm:px-40">
-                <div className="grid sm:grid-cols-2 gap-10 sm:gap-0 items-center mx-auto">
+            <div className="w-full flex justify-center py-16 px-10 sm:py-10 sm:px-14 lg:px-40">
+                <div className="grid sm:grid-cols-2 gap-10 lg:gap-0 items-center mx-auto">
                     <div className="flex flex-col mx-auto gap-5">
                         <div>
                             <h2 className="text-xl sm:text-2xl 2xl:text-3xl font-bold text-blue-800 dark:text-blue-500">AGUA PURA</h2>

@@ -64,17 +64,17 @@ const NewsBanner = () => {
                     <p className="font-semibold text-md sm:text-lg text-blue-600 dark:text-blue-400 italic text-center">Aquí te mostramos algunas de las ultimas noticias con respecto al agua entre otros.</p>
                 </div>
                 <div className="bg-transparent">
-                    <Carousel plugins={[Autoplay({delay: 4000})]} className="w-full max-w-sm sm:max-w-6xl mx-auto">
+                    <Carousel plugins={[Autoplay({delay: 4000})]} className="w-full max-w-sm sm:max-w-md lg:max-w-6xl mx-auto">
                         <CarouselContent className="-ml-2 md:-ml-4">
                             {CarouselBanner.map(({id, image, name, description, link}) => (
-                            <CarouselItem key={id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                            <CarouselItem key={id} className="pl-2 md:pl-4 lg:basis-1/3">
                                 <div className="p-2">
                                     <Card className="border-none">
                                         <CardContent className="flex flex-col aspect-square justify-between gap-4 p-6 dark:bg-blue-950 bg-blue-50 rounded-lg">
                                             <Image src={image} alt="img-noticia" width={300} height={300} className="rounded-lg bg-cover bg-no-repeat w-full h-[200px] object-cover" />
                                             <h2 className="text-base sm:text-md font-bold text-center text-gray-800 dark:text-gray-200">{name}</h2>
                                             <p className="text-sm font-normal">{description}</p>
-                                            <a href={link} target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 underline text-start">Leer más</a>
+                                            <a href={link} target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 underline text-start text-sm">Leer más</a>
                                         </CardContent>
                                     </Card>
                                 </div>

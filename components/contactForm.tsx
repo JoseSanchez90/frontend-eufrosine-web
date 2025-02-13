@@ -11,7 +11,7 @@ const ContactForm = ({className, ...props}: React.ComponentProps<"div">) => {
 
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
-      <Card className="overflow-hidden shadow-2xl rounded-xl">
+      <Card className="overflow-hidden shadow-lg rounded-xl shadow-blue-500 dark:shadow-blue-500 dark:shadow-md">
         <CardContent className="grid p-0 md:grid-cols-2">
           <form className="p-6 md:p-8">
             <div className="flex flex-col gap-6">
@@ -74,7 +74,7 @@ const ContactForm = ({className, ...props}: React.ComponentProps<"div">) => {
             <Image
               src={EufrosineLogo}
               alt="Image"
-              className="absolute inset-0 w-full h-full contact object-cover dark:brightness-[0.2] dark:grayscale"
+              className="absolute inset-0 w-full h-full contact object-cover"
             />
           </div>
         </CardContent>
