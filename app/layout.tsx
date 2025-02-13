@@ -11,8 +11,8 @@ const urbanist = Urbanist({
 });
 
 export const metadata: Metadata = {
-  title: "Eufrosine Agua de Mesa",
-  description: "Bienvenido a Eufrosine",
+  title: "Eufrosine",
+  description: "Agua pura y refrescante, representa salud y bienestar, un recurso esencial para la vida. Purificada con tecnología avanzada: ultrafiltración, ósmosis inversa, esterilización ultravioleta y ozonización",
 };
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
