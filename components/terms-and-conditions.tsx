@@ -8,6 +8,7 @@ import {
     AlertDialogFooter,
     AlertDialogAction,
   } from "@/components/ui/alert-dialog"
+import { ArrowRight, ArrowRightCircle, ArrowRightFromLineIcon, ArrowRightSquare } from "lucide-react"
   
   export function TermsConditions() {
     return (
@@ -24,16 +25,16 @@ import {
           <AlertDialogDescription className="max-h-[400px] overflow-y-auto space-y-4 text-sm">
             <p className="font-semibold">Última actualización: 16 de Febrero del 2025</p>
             <p>
-              Bienvenido a la empresa PUNTO VIDA pO SAC. Antes de utilizar nuestro sitio web www.aguaeufrosine.com,
+              Bienvenido a la empresa PUNTO VIDA pO SAC. Antes de utilizar nuestro sitio web <strong>www.aguaeufrosine.com</strong>,
               te pedimos que leas atentamente los siguientes términos y condiciones.
             </p>
             <p className="font-semibold">1. INFORMACIÓN GENERAL</p>
             <ul className="list-disc pl-4">
-              <li>Razón social: PUNTO VIDA H2O SAC</li>
-              <li>RUC: 20613393367</li>
-              <li>Dirección: Av. Cincuentenario 390 – Hualmay.</li>
-              <li>Correo electrónico de contacto: aguaeufrosine@gmail.com</li>
-              <li>Teléfono de contacto: 903565918</li>
+              <li className="list-none flex items-center gap-2"><ArrowRightCircle size={18}/> Razón social: PUNTO VIDA H2O SAC</li>
+              <li className="list-none flex items-center gap-2"><ArrowRightCircle size={18}/>RUC: 20613393367</li>
+              <li className="list-none flex items-center gap-2"><ArrowRightCircle size={18}/>Dirección: Av. Cincuentenario S/N – Hualmay.</li>
+              <li className="list-none flex items-center gap-2"><ArrowRightCircle size={18}/>Correo electrónico de contacto: aguaeufrosine@gmail.com</li>
+              <li className="list-none flex items-center gap-2"><ArrowRightCircle size={18}/>Teléfono de contacto: 903565918</li>
             </ul>
             <p className="font-semibold">2. USO DEL SITIO WEB</p>
             <p>Este sitio web tiene como propósito informar la venta de productos de agua de mesa en diversas presentaciones.</p>
