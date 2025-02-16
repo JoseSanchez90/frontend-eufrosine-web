@@ -81,7 +81,7 @@ const Footer = () => {
                 <div className="hidden md:flex flex-col justify-center items-center text-xs text-gray-500 sm:text-center dark:text-gray-400">
                     <span>&copy; 2025 - Derechos Reservados</span>
                     <span>Diseñado y Creado: 
-                        <Link href="https://josesanchez-cv.vercel.app/" target="_blank" rel="noopener noreferrer" className="font-bold text-black dark:text-white"> Jose Sanchez</Link>
+                        <Link href="https://josesanchez.vercel.app/" target="_blank" rel="noopener noreferrer" className="font-bold text-black dark:text-white"> Jose Sanchez</Link>
                     </span>
                 </div>
             </div>
