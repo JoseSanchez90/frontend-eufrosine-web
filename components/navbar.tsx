@@ -1,11 +1,11 @@
 "use client"
 
-import { ShoppingCart, User } from "lucide-react";
+// import { ShoppingCart, User } from "lucide-react";
 import { useRouter } from "next/navigation";
 import MenuList from "./menu-list";
 import ItemsMenuMobile from "./items-menu-mobile";
 import ToggleTheme from "./toggle-theme";
-import { BsFacebook, BsInstagram } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 const Navbar = () => {
 
@@ -21,6 +21,7 @@ const Navbar = () => {
                 <ItemsMenuMobile/>
             </div>
             <div className="flex items-center justify-between gap-4 sm:gap-7">
+                <a href="https://api.whatsapp.com/send?phone=51903565918" target="_blank"><BsWhatsapp size={18} color="green"/></a>
                 <a href="https://www.facebook.com/" target="_blank"><BsFacebook size={18} color="blue"/></a>
                 <a href="https://www.instagram.com/" target="_blank"><BsInstagram size={18} color="orange" /></a>
                 {/* <User strokeWidth={1} className="cursor-pointer" onClick={() => router.push("/usuario")}/>

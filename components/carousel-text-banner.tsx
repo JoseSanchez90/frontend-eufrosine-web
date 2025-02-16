@@ -43,13 +43,13 @@ const CarouselTextBanner = () => {
                             <div>
                                 <Card className="shadow-none border-none bg-transparent">
                                     <CardContent className="flex flex-col justify-center items-center">
-                                        <p className="flex flex-row justify-center items-center gap-2 text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200">
+                                        <p className="flex flex-row justify-center items-center gap-2 text-xs sm:text-sm text-gray-800 dark:text-gray-200">
                                             {name}
                                             </p>
-                                        <p className="flex flex-row justify-center items-center gap-2 text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200">
+                                        <p className="flex flex-row justify-center items-center gap-2 text-xs sm:text-sm text-gray-800 dark:text-gray-200">
                                             {description}
                                         </p>
-                                        <p className="text-xs sm:text-sm font-medium text-gray-800 dark:text-white">
+                                        <p className="text-xs sm:text-sm text-gray-800 dark:text-white">
                                             {oferta}
                                         </p>
                                     </CardContent>
