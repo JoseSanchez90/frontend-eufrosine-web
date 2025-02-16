@@ -116,7 +116,7 @@ export default function ContactForm () {
               </div>
               
               <Button type="submit" className="w-full" disabled={status === "loading"}>
-              {status === "loading" ? "Sending..." : "Enviar"}
+              {status === "loading" ? "Enviando..." : "Enviar"}
               </Button>
                 {status === "success" && <p className="text-green-500">Mensaje enviado satisfactoriamente!</p>}
                 {status === "error" && <p className="text-red-500">Error al enviar mensaje.</p>}
