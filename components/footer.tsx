@@ -4,6 +4,7 @@ import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { SiGooglemaps } from "react-icons/si";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
+import { TermsConditions } from "./terms-and-conditions";
 
 const dataFooter = [
     {
@@ -59,11 +60,9 @@ const Footer = () => {
                     <div>
                         <h3 className="py-2 font-bold">Legal</h3>                    
                         <ul className="flex flex-col items-start gap-1 mb-6 underline text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
-                            {dataFooter.map((data) => (
-                                <li key={data.id}>
-                                    <Link href={data.link} className="hover:underline me-4 md:me-6">{data.name}</Link>
-                                </li>
-                            ))}
+
+                            <TermsConditions/>
+
                         </ul>
                     </div>
                 </div>
