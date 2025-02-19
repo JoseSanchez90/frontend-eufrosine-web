@@ -30,7 +30,7 @@ const SecondaryBanner = () => {
 
 
     return ( 
-        <div className="w-full flex flex-col justify-center mx-auto py-10 pb-20 sm:pb-0 px-5 sm:px-0 sm:py-20 sm:gap-10 gap-5">
+        <div className="w-full flex flex-col justify-center mx-auto py-10 pb-20 sm:pb-0 px-10 sm:px-0 sm:py-20 sm:gap-10 gap-5">
             <div className="flex flex-col justify-center items-center gap-2">
                 <h2 className="font-bold text-xl sm:text-3xl text-center">COMPOSICION DEL <span className="text-blue-800">AGUA</span></h2>
                 <h3 className="font-semibold text-md sm:text-lg text-blue-600 italic text-center">¿QUE HAY DENTRO?</h3>
