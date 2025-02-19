@@ -33,7 +33,7 @@ const MainBanner = () => {
     return ( 
         <>
             {/* BANNER PRINCIPAL */}
-            <div className="w-full flex justify-center py-16 px-10 sm:py-10 sm:px-14 lg:px-20 2xl:px-40 2xl:py-24">
+            <div className="w-full flex justify-center py-8 px-10 sm:py-10 sm:px-14 lg:px-20 2xl:px-40 2xl:py-24">
                 <div className="grid sm:grid-cols-2 gap-10 lg:gap-0 items-center mx-auto">
                     <div className="flex flex-col mx-auto gap-5">
                         <div>
@@ -50,7 +50,7 @@ const MainBanner = () => {
                         </div>
                     </div>
                     {/* Carrusel de banners */}
-                    <div className="flex justify-center py-10 sm:py-0">
+                    <div className="flex justify-center py-4 sm:py-0">
                         <Carousel className="w-full max-w-md">
                             <CarouselContent
                                 className="transition-transform duration-1000 ease-in-out"
