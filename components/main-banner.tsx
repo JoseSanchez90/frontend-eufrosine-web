@@ -46,7 +46,7 @@ const MainBanner = () => {
                         <div className="flex flex-row gap-5">
                             <a href="https://api.whatsapp.com/send?phone=51903565918" target="_blank"><Button className="text-sm sm:text-base dark:text-white bg-green-600 hover:bg-green-500 dark:bg-green-600 dark:hover:bg-green-500 px-6"><SiWhatsapp/> Solicitar ahora</Button>
                             </a>
-                            <Button className="text-sm sm:text-base dark:text-white hover:bg-blue-800 dark:hover:bg-blue-800 px-6" onClick={() => router.push("/nosotros")}>Ir a tienda <BsArrowRight/></Button>
+                            <Button className="text-sm sm:text-base dark:text-white hover:bg-blue-800 dark:hover:bg-blue-800 px-6" onClick={() => router.push("/productos")}>Ir a tienda <BsArrowRight/></Button>
                         </div>
                     </div>
                     {/* Carrusel de banners */}
