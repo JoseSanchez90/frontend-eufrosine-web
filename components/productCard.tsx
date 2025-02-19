@@ -26,8 +26,8 @@ export function ProductCard({ title, description, imageUrl, price, offerPrice }:
           src={imageUrl}
           alt={title}
           layout="fill"
-          objectFit="cover"
-          className="transition-transform duration-300 ease-in-out lg:hover:scale-110"
+          objectFit="contain"
+          className="transition-transform duration-300 ease-in-out lg:hover:scale-110 bg-blue-400"
         />
         {offerPrice && price && offerPrice < price && (
           <Badge className="absolute top-2 right-2 bg-red-500">{discount}% Dscto</Badge>

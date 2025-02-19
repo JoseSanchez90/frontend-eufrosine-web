@@ -1,22 +1,39 @@
 "use client"
 
 import Image from "next/image";
-import hombreAnimado from "../app/img/hombre-animado.png"
+import banner1 from "../app/img/banner1.png"
+import banner2 from "../app/img/banner2.png"
+import banner3 from "../app/img/banner3.png"
 import { Button } from "./ui/button";
-import { BsArrowRight, BsCart } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 import NewsBanner from "./news-banner";
 import SecondaryBanner from "./secondary-banner";
 import { useRouter } from "next/navigation";
 import { SiWhatsapp } from "react-icons/si";
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+import { useEffect, useState } from "react";
+
+
+const images = [banner1, banner2, banner3];
 
 const MainBanner = () => {
 
     const router = useRouter()
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    // Efecto para cambiar de imagen automáticamente cada 5 segundos
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 5000); // 5000ms = 5 segundos
+
+        return () => clearInterval(interval); // Limpiar intervalo al desmontar
+    }, []);
 
     return ( 
         <>
             {/* BANNER PRINCIPAL */}
-            <div className="w-full flex justify-center py-16 px-10 sm:py-10 sm:px-14 lg:px-40">
+            <div className="w-full flex justify-center py-16 px-10 sm:py-10 sm:px-14 lg:px-20 2xl:px-40 2xl:py-24">
                 <div className="grid sm:grid-cols-2 gap-10 lg:gap-0 items-center mx-auto">
                     <div className="flex flex-col mx-auto gap-5">
                         <div>
@@ -29,11 +46,23 @@ const MainBanner = () => {
                         <div className="flex flex-row gap-5">
                             <a href="https://api.whatsapp.com/send?phone=51903565918" target="_blank"><Button className="text-sm sm:text-base dark:text-white bg-green-600 hover:bg-green-500 dark:bg-green-600 dark:hover:bg-green-500 px-6"><SiWhatsapp/> Solicitar ahora</Button>
                             </a>
-                            <Button className="text-sm sm:text-base dark:text-white hover:bg-blue-800 dark:hover:bg-blue-800 px-6" onClick={() => router.push("/nosotros")}>Conoce más <BsArrowRight/></Button>
+                            <Button className="text-sm sm:text-base dark:text-white hover:bg-blue-800 dark:hover:bg-blue-800 px-6" onClick={() => router.push("/nosotros")}>Ir a tienda <BsArrowRight/></Button>
                         </div>
                     </div>
-                    <div className="flex justify-center">
-                        <Image src={hombreAnimado} alt="vaso" className="w-[300px] md:w-[350px] 2xl:w-[500px]" priority />
+                    {/* Carrusel de banners */}
+                    <div className="flex justify-center py-10 sm:py-0">
+                        <Carousel className="w-full max-w-md">
+                            <CarouselContent
+                                className="transition-transform duration-1000 ease-in-out"
+                                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+                            >
+                                {images.map((image, index) => (
+                                    <CarouselItem key={index} className="flex justify-center">
+                                        <Image src={image} alt={`banner-${index}`} className="w-full rounded-lg" priority />
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                        </Carousel>
                     </div>
                 </div>
             </div>

@@ -49,7 +49,7 @@ export default function ContactForm () {
 
   return (
     <div className="flex flex-col gap-6">
-      <Card className="overflow-hidden shadow-lg rounded-xl shadow-blue-500 dark:shadow-blue-500 dark:shadow-md">
+      <Card className="overflow-hidden rounded-xl bgcontactform border-gray-300">
         <CardContent className="grid p-0 md:grid-cols-2">
           <form className="p-6 md:p-8" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-6">
