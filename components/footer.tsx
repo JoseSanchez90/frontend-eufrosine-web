@@ -51,7 +51,7 @@ const Footer = () => {
                         <div className="flex flex-col items-start gap-1 mb-6 text-sm sm:mb-0">
                             <p className="flex flex-row justify-center items-center gap-2"><SiGooglemaps />Huacho, Lima - Perú</p>
                             <p className="flex flex-row justify-center items-center gap-2"><IoIosPhonePortrait />903 565 918</p>
-                            <p className="flex flex-row justify-center items-center gap-2"><MdEmail />correo@empresa.com</p>
+                            <p className="flex flex-row justify-center items-center gap-2"><MdEmail />aguaeufrosine@gmail.com</p>
                         </div>
                     </div>
                 </div>
