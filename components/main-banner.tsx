@@ -49,13 +49,12 @@ const MainBanner = () => {
                             <Button className="text-sm sm:text-base dark:text-white hover:bg-blue-800 dark:hover:bg-blue-800 px-6" onClick={() => router.push("/productos")}>Ir a tienda <BsArrowRight/></Button>
                         </div>
                     </div>
-                    {/* Carrusel de banners */}
+                    {/* CAROUSEL DE BANNERS */}
                     <div className="flex justify-center py-4 sm:py-0">
                         <Carousel className="w-full max-w-md">
                             <CarouselContent
                                 className="transition-transform duration-1000 ease-in-out"
-                                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-                            >
+                                style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                                 {images.map((image, index) => (
                                     <CarouselItem key={index} className="flex justify-center">
                                         <Image src={image} alt={`banner-${index}`} className="w-full rounded-lg" priority />
