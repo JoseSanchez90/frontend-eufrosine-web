@@ -22,7 +22,7 @@ export async function POST(req: Request) {
       from: process.env.EMAIL_USER,
       to: "aguademesaeufrosineperu@gmail.com",
       subject: `Has recibido un mensaje desde tu Web Eufrosine`,
-      text: `Nombre del usuario: ${name}\nNombre de la Empresa: ${company}\nNumero de celular: ${phone}\nCorreo Electronica: ${email}\nMensaje: ${message}`,
+      text: `Cliente: ${name}\nEmpresa: ${company}\nCelular: ${phone}\nEmail: ${email}\nMensaje: ${message}`,
       replyTo: email,
     })
 
