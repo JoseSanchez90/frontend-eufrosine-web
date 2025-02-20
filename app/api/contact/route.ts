@@ -20,7 +20,7 @@ export async function POST(req: Request) {
 
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: "aguaeufrosine@gmail.com",
+      to: "aguademesaeufrosineperu@gmail.com",
       subject: `Has recibido un mensaje desde tu Web Eufrosine`,
       text: `Nombre del usuario: ${name}\nNombre de la Empresa: ${company}\nNumero de celular: ${phone}\nCorreo Electronica: ${email}\nMensaje: ${message}`,
       replyTo: email,
