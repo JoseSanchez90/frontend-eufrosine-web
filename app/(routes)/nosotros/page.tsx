@@ -32,7 +32,7 @@ const Nosotros = () => {
       initial={{ opacity: 0, y: 50 }} 
       animate={{ opacity: 1, y: 0 }} 
       transition={{ duration: 1, ease: "easeInOut" }} 
-      className="grid grid-cols-1 xl:grid-cols-2 sm:py-10 py-5 gap-5 sm:gap-10">
+      className="grid grid-cols-1 xl:grid-cols-2 sm:py-10 py-5 gap-5 sm:gap-10 overflow-hidden">
         <motion.div
         initial={{ opacity: 0, x: -100 }} 
         animate={{ opacity: 1, x: 0 }} 
