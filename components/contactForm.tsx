@@ -9,6 +9,7 @@ import Image from "next/image"
 import EufrosineLogo from "@/app/img/Logo-Eufrosine.png"
 import { Textarea } from "./ui/textarea"
 import { useState } from "react"
+import { motion } from "framer-motion";
 
 export default function ContactForm () {
 
@@ -48,11 +49,20 @@ export default function ContactForm () {
   };
 
   return (
-    <div className="flex flex-col gap-6">
+    <motion.div
+    initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      whileHover={{ scale: 1.02 }}
+      className="flex flex-col gap-6">
       <Card className="overflow-hidden rounded-xl bgcontactform border-gray-300">
         <CardContent className="grid p-0 md:grid-cols-2">
           <form className="p-6 md:p-8" onSubmit={handleSubmit}>
-            <div className="flex flex-col gap-6">
+            <motion.div
+             initial={{ opacity: 0, y: 20 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ delay: 0.3, duration: 0.6 }}
+             className="flex flex-col gap-6">
               <div className="flex flex-col items-center text-center">
                 <h1 className="text-xl sm:text-2xl font-bold text-blue-800 dark:text-blue-500">CONTACTANOS</h1>
               </div>
@@ -114,13 +124,15 @@ export default function ContactForm () {
                   >
                   </Textarea>
               </div>
-              
-              <Button type="submit" className="w-full" disabled={status === "loading"}>
-              {status === "loading" ? "Enviando..." : "Enviar"}
-              </Button>
+              <motion.div
+              whileTap={{ scale: 0.95 }}>
+                <Button type="submit" className="w-full" disabled={status === "loading"}>
+                {status === "loading" ? "Enviando..." : "Enviar"}
+                </Button>
+              </motion.div>
                 {status === "success" && <p className="text-green-500">Mensaje enviado satisfactoriamente!</p>}
                 {status === "error" && <p className="text-red-500">Error al enviar mensaje.</p>}
-            </div>
+            </motion.div>
           </form>
           <div className="relative hidden bg-muted md:block">
             <Image
@@ -131,6 +143,6 @@ export default function ContactForm () {
           </div>
         </CardContent>
       </Card>
-    </div>
+    </motion.div>
   )
 }

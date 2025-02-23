@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import bottle from "../app/img/bottle.json"
+import { motion } from "framer-motion";
 
 const SecondaryBanner = () => {
 
@@ -30,13 +31,23 @@ const SecondaryBanner = () => {
 
 
     return ( 
-        <div className="w-full flex flex-col justify-center mx-auto py-10 pb-20 sm:pb-0 px-10 sm:px-0 sm:py-20 sm:gap-10 gap-5">
-            <div className="flex flex-col justify-center items-center gap-2">
+        <div className="w-full flex flex-col justify-center mx-auto py-10 pb-20 sm:pb-0 px-10 sm:px-0 sm:py-20 sm:gap-10 gap-5 overflow-hidden">
+            <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="flex flex-col justify-center items-center gap-2">
                 <h2 className="font-bold text-xl sm:text-3xl text-center">COMPOSICION DEL <span className="text-blue-800">AGUA</span></h2>
                 <h3 className="font-semibold text-md sm:text-lg text-blue-600 italic text-center">¿QUE HAY DENTRO?</h3>
-            </div>
+            </motion.div>
             <div className="flex flex-col sm:grid sm:grid-cols-3 justify-center items-center gap-5 sm:gap-0">
-                <div className="flex flex-col justify-center text-start sm:text-end sm:pl-10 lg:pl-40 gap-5 sm:gap-10 text-sm">
+                <motion.div
+                initial={{ opacity: 0, x: -50 }} 
+                whileInView={{ opacity: 1, x: 0 }} 
+                transition={{ duration: 1, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="flex flex-col justify-center text-start sm:text-end sm:pl-10 lg:pl-40 gap-5 sm:gap-10 text-sm">
                     <div className="flex flex-col gap-1">
                         <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Calcio Ca2+</h3>
                         <p className="font-bold text-blue-600 dark:text-blue-400 text-md">240 mg/L</p>
@@ -52,11 +63,16 @@ const SecondaryBanner = () => {
                         <p className="font-bold text-blue-600 dark:text-blue-400 text-md">5.2 mg/L</p>
                         <p className="font-medium text-xs dark:text-white">El sodio es un electrolito que juega un papel en la regulación del equilibrio de líquidos y la función nerviosa y muscular.</p>
                     </div>
-                </div>
+                </motion.div>
                 <div className="flex justify-center items-center text-center">
                     <div ref={animationContainer}></div>
                 </div>
-                <div className="flex flex-col justify-center text-start sm:pr-10 lg:pr-40 gap-5 sm:gap-10 text-sm">
+                <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="flex flex-col justify-center text-start sm:pr-10 lg:pr-40 gap-5 sm:gap-10 text-sm">
                     <div className="flex flex-col gap-1">
                         <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Sulfato SO4(2-)</h3>
                         <p className="font-bold text-blue-600 dark:text-blue-400 text-md">400 mg/L</p>
@@ -72,7 +88,7 @@ const SecondaryBanner = () => {
                         <p className="font-bold text-blue-600 dark:text-blue-400 text-md">384 mg/L</p>
                         <p className="font-medium text-xs dark:text-white">El bicarbonato es un antiácido natural que ayuda a neutralizar el ácido estomacal y aliviar la acidez y la indigestión.</p>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
      );

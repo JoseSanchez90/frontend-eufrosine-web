@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { SiWhatsapp } from "react-icons/si"
+import { motion } from "framer-motion";
 
 interface ProductCardProps {
   title: string
@@ -20,6 +21,12 @@ export function ProductCard({ title, description, imageUrl, price, offerPrice }:
   }
 
   return (
+    <motion.div
+    initial={{ opacity: 0, scale: 0.9 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.6 }}
+    whileHover={{ scale: 1.05 }} // Efecto al pasar el mouse
+    viewport={{ once: true }}>
     <Card className="w-[300px] overflow-hidden bg-blue-50 dark:bg-blue-950 border-blue-100 dark:border-blue-950">
       <div className="relative h-48 w-full">
         <Image
@@ -27,7 +34,7 @@ export function ProductCard({ title, description, imageUrl, price, offerPrice }:
           alt={title}
           layout="fill"
           objectFit="cover"
-          className="transition-transform duration-300 ease-in-out lg:hover:scale-110 bg-white"
+          className="bg-white"
         />
         {offerPrice && price && offerPrice < price && (
           <Badge className="absolute top-2 right-2 bg-red-500">{discount}% Dscto</Badge>
@@ -55,5 +62,6 @@ export function ProductCard({ title, description, imageUrl, price, offerPrice }:
         <a href="https://api.whatsapp.com/send?phone=51903565918" target="_blank"><Button className="text-sm sm:text-base dark:text-white bg-green-600 hover:bg-green-500 dark:bg-green-600 dark:hover:bg-green-500 px-6"><SiWhatsapp/> Solicitar ahora</Button></a>
       </CardFooter>
     </Card>
+    </motion.div>
   )
 }

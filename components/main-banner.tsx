@@ -12,6 +12,7 @@ import { useRouter } from "next/navigation";
 import { SiWhatsapp } from "react-icons/si";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 
 const images = [banner1, banner2, banner3];
@@ -33,9 +34,17 @@ const MainBanner = () => {
     return ( 
         <>
             {/* BANNER PRINCIPAL */}
-            <div className="w-full flex justify-center py-8 px-10 sm:py-10 sm:px-14 lg:px-20 2xl:px-40 2xl:py-24">
+            <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+            className="w-full flex justify-center py-8 px-10 sm:py-10 sm:px-14 lg:px-20 2xl:px-40 2xl:py-24">
                 <div className="grid sm:grid-cols-2 gap-10 lg:gap-0 items-center mx-auto">
-                    <div className="flex flex-col mx-auto gap-5">
+                    <motion.div
+                    initial={{ opacity: 0, x: -100 }} 
+                    animate={{ opacity: 1, x: 0 }} 
+                    transition={{ duration: 1, delay: 0.5 }}
+                    className="flex flex-col mx-auto gap-5">
                         <div>
                             <h2 className="text-xl sm:text-2xl 2xl:text-3xl font-bold text-blue-800 dark:text-blue-500">AGUA PURA</h2>
                             <h2 className="text-xl sm:text-2xl 2xl:text-3xl font-bold text-blue-800 dark:text-blue-500">BIENESTAR EN TU VIDA</h2>
@@ -43,14 +52,22 @@ const MainBanner = () => {
                         <div>
                             <p className="text-sm sm:text-base font-medium">Descubre la frescura y pureza en cada gota con Agua <span className="text-blue-800 dark:text-blue-600 text-lg">Eu<span className="text-md font-bold">Frosine</span></span>, tu fuente confiable de agua de mesa de alta calidad.</p>
                         </div>
-                        <div className="flex flex-row gap-5">
+                        <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }} 
+                        animate={{ opacity: 1, scale: 1 }} 
+                        transition={{ duration: 1, delay: 1 }}
+                        className="flex flex-row gap-5">
                             <a href="https://api.whatsapp.com/send?phone=51903565918" target="_blank"><Button className="text-sm sm:text-base dark:text-white bg-green-600 hover:bg-green-500 dark:bg-green-600 dark:hover:bg-green-500 px-6"><SiWhatsapp/> Solicitar ahora</Button>
                             </a>
                             <Button className="text-sm sm:text-base dark:text-white hover:bg-blue-800 dark:hover:bg-blue-800 px-6" onClick={() => router.push("/productos")}>Ir a tienda <BsArrowRight/></Button>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                     {/* CAROUSEL DE BANNERS */}
-                    <div className="flex justify-center py-4 sm:py-0">
+                    <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }} 
+                    animate={{ opacity: 1, scale: 1 }} 
+                    transition={{ duration: 1, delay: 1.2 }}
+                    className="flex justify-center py-4 sm:py-0">
                         <Carousel className="w-full max-w-md">
                             <CarouselContent
                                 className="transition-transform duration-1000 ease-in-out"
@@ -62,9 +79,9 @@ const MainBanner = () => {
                                 ))}
                             </CarouselContent>
                         </Carousel>
-                    </div>
+                    </motion.div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* BANNER DOS */}
             <SecondaryBanner/>

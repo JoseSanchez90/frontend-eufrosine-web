@@ -4,8 +4,8 @@ import { Card, CardContent } from "./ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay"
-import { useRouter } from "next/navigation";
-
+// import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 
 const CarouselBanner = [
     {
@@ -54,21 +54,44 @@ const CarouselBanner = [
 
 const NewsBanner = () => {
 
-    const router = useRouter()
+    // const router = useRouter()
 
     return ( 
-        <div className="w-full flex justify-center items-center py-16 px-10">
-            <div className="flex flex-col gap-10 ">
-                <div className="flex flex-col justify-center items-center gap-5 sm:gap-2 px-5 sm:px-20">
+        <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="w-full flex justify-center items-center py-16 px-10">
+            <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="flex flex-col gap-10 ">
+                <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+                className="flex flex-col justify-center items-center gap-5 sm:gap-2 px-5 sm:px-20">
                     <h2 className="font-bold text-xl sm:text-3xl text-center">NUESTRAS ULTIMAS <span className="text-blue-800 dark:text-blue-500">NOTICIAS</span></h2>
                     <p className="font-semibold text-md sm:text-lg text-blue-600 dark:text-blue-400 italic text-center">Aquí te mostramos algunas de las ultimas noticias con respecto al agua entre otros.</p>
-                </div>
-                <div className="bg-transparent">
+                </motion.div>
+                <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="bg-transparent">
                     <Carousel plugins={[Autoplay({delay: 4000})]} className="w-full max-w-sm sm:max-w-md lg:max-w-6xl mx-auto">
                         <CarouselContent className="-ml-2 md:-ml-4">
                             {CarouselBanner.map(({id, image, name, description, link}) => (
                             <CarouselItem key={id} className="pl-2 md:pl-4 lg:basis-1/3">
-                                <div className="p-2">
+                                <motion.div
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, delay: 0.2 }}
+                                viewport={{ once: true }}
+                                className="p-2">
                                     <Card className="border-none">
                                         <CardContent className="flex flex-col aspect-square justify-between gap-4 p-6 dark:bg-blue-950 bg-blue-50 rounded-lg">
                                             <Image src={image} alt="img-noticia" width={300} height={300} className="rounded-lg bg-cover bg-no-repeat w-full h-[200px] object-cover" />
@@ -77,16 +100,16 @@ const NewsBanner = () => {
                                             <a href={link} target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 underline text-start text-sm">Leer más</a>
                                         </CardContent>
                                     </Card>
-                                </div>
+                                </motion.div>
                             </CarouselItem>
                             ))}
                         </CarouselContent>
                             <CarouselPrevious className="hidden sm:flex" />
                             <CarouselNext className="hidden sm:flex" />
                     </Carousel>
-                </div>
-            </div>
-        </div>
+                </motion.div>
+            </motion.div>
+        </motion.div>
      );
 }
  
