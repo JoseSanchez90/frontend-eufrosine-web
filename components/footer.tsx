@@ -60,9 +60,7 @@ const Footer = () => {
                     <div>
                         <h3 className="py-2 font-bold">Legal</h3>                    
                         <ul className="flex flex-col items-start gap-1 mb-6 underline text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
-
                             <TermsConditions/>
-
                         </ul>
                     </div>
                 </div>
