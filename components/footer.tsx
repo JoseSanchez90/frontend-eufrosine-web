@@ -69,7 +69,7 @@ const Footer = () => {
                     <div>
                         <h3 className="py-2 font-bold">Siguenos</h3>
                         <div className="flex flex-col items-start mb-6 gap-1 text-sm sm:mb-0">
-                            <Link href="#" className="flex flex-row items-center gap-2"><BsFacebook/><span>Facebook</span></Link>
+                            <Link href="https://www.facebook.com/aguaeufrosine/" target="_autoblank" className="flex flex-row items-center gap-2"><BsFacebook/><span>Facebook</span></Link>
                             <Link href="#" className="flex flex-row items-center gap-2"><BsInstagram/><span>Instagram</span></Link>
                         </div>
                     </div>
