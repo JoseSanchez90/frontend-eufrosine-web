@@ -5,6 +5,8 @@ import { SiGooglemaps } from "react-icons/si";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { TermsConditions } from "./terms-and-conditions";
+import Image from "next/image";
+import libro from "@/app/img/libro_reclam.jpg"
 
 const dataFooter = [
     {
@@ -58,10 +60,15 @@ const Footer = () => {
 
                 <div className="flex flex-col sm:flex justify-start items-center">
                     <div>
-                        <h3 className="py-2 font-bold">Legal</h3>                    
-                        <ul className="flex flex-col items-start gap-1 mb-6 underline text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
-                            <TermsConditions/>
-                        </ul>
+                        <h3 className="py-2 font-bold">Legal</h3>
+                        <div className="flex flex-col gap-2">
+                            <ul className="flex flex-col items-start gap-1 mb-6 underline text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+                                <TermsConditions/>
+                            </ul>
+                            <Link href="/libro-de-reclamaciones" className="flex flex-col items-start gap-1 mb-6 underline text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+                                <Image src={libro} alt="Libro-de-reclamaciones" width={200} height={50} className="rounded-xl" />
+                            </Link>
+                        </div>                 
                     </div>
                 </div>
 
