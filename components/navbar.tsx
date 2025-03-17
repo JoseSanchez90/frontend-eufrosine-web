@@ -39,7 +39,7 @@ const Navbar = () => {
             </div>
             <div className="flex items-center justify-between gap-4 sm:gap-7">
                 <a href="https://api.whatsapp.com/send?phone=51903565918" target="_blank"><BsWhatsapp size={18} color="green"/></a>
-                <a href="https://www.facebook.com/" target="_blank"><BsFacebook size={18} color="blue"/></a>
+                <a href="https://www.facebook.com/aguaeufrosine/" target="_blank"><BsFacebook size={18} color="blue"/></a>
                 <a href="https://www.instagram.com/" target="_blank"><BsInstagram size={18} color="orange" /></a>
                 {/* <User strokeWidth={1} className="cursor-pointer" onClick={() => router.push("/usuario")}/>
                 <ShoppingCart strokeWidth={1} className="cursor-pointer" onClick={() => router.push("/carrito-compras")}/> */}
