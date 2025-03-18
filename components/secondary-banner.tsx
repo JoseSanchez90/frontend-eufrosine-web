@@ -38,8 +38,10 @@ const SecondaryBanner = () => {
             transition={{ duration: 1, delay: 0.5 }}
             viewport={{ once: true }}
             className="flex flex-col justify-center items-center gap-2">
-                <h2 className="font-bold text-xl sm:text-3xl text-center">COMPOSICION DEL <span className="text-blue-800">AGUA</span></h2>
-                <h3 className="font-semibold text-md sm:text-lg text-blue-600 italic text-center">¿QUE HAY DENTRO?</h3>
+                <h2 className="font-bold text-xl sm:text-3xl text-center">PROCESO DE PURIFICACION <span className="text-blue-800">DEL AGUA</span></h2>
+                <h3 className="font-semibold text-md sm:text-lg text-blue-600 italic text-center">¿QUÉ HAY DENTRO DE CADA BOTELLA?</h3>
+                <p className="font-semibold text-sm text-gray-600 italic text-center">Nuestro sistema de purificación garantiza agua pura y segura mediante un proceso avanzado que elimina impurezas, olores y sabores no deseados</p>
+                <p className="font-semibold text-sm text-gray-600 italic text-center"><span className="text-blue-800">Resultado:</span> Agua de mesa de alta calidad, libre de impurezas y con un sabor puro y refrescante.</p>
             </motion.div>
             <div className="flex flex-col sm:grid sm:grid-cols-3 justify-center items-center gap-5 sm:gap-0">
                 <motion.div
@@ -49,19 +51,19 @@ const SecondaryBanner = () => {
                 viewport={{ once: true }}
                 className="flex flex-col justify-center text-start sm:text-end sm:pl-10 lg:pl-40 gap-5 sm:gap-10 text-sm">
                     <div className="flex flex-col gap-1">
-                        <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Calcio Ca2+</h3>
-                        <p className="font-bold text-blue-600 dark:text-blue-400 text-md">240 mg/L</p>
-                        <p className="font-medium text-xs dark:text-white">El calcio es un mineral esencial para la formación y mantenimiento de huesos y dientes.</p>
+                        <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Filtro Multimedia</h3>
+                        {/* <p className="font-bold text-blue-600 dark:text-blue-400 text-md">240 mg/L</p> */}
+                        <p className="font-medium text-xs dark:text-white">Elimina sedimentos como arena, arcilla y partículas suspendidas.</p>
                     </div>
                     <div className="flex flex-col gap-1">
-                        <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Magnesio Mg2+</h3>
-                        <p className="font-bold text-blue-600 dark:text-blue-400 text-md">42 mg/L</p>
-                        <p className="font-medium text-xs dark:text-white">El magnesio es un nutriente importante para diversas funciones del cuerpo, incluyendo la función muscular y nerviosa.</p>
+                        <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Filtro de Carbón Activado</h3>
+                        {/* <p className="font-bold text-blue-600 dark:text-blue-400 text-md">42 mg/L</p> */}
+                        <p className="font-medium text-xs dark:text-white">Absorbe el cloro, compuestos orgánicos y mejora el sabor y olor del agua.</p>
                     </div>
                     <div className="flex flex-col gap-1">
-                        <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Sodio Na+</h3>
-                        <p className="font-bold text-blue-600 dark:text-blue-400 text-md">5.2 mg/L</p>
-                        <p className="font-medium text-xs dark:text-white">El sodio es un electrolito que juega un papel en la regulación del equilibrio de líquidos y la función nerviosa y muscular.</p>
+                        <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Ablandador Industrial</h3>
+                        {/* <p className="font-bold text-blue-600 dark:text-blue-400 text-md">5.2 mg/L</p> */}
+                        <p className="font-medium text-xs dark:text-white">Reduce la dureza del agua eliminando calcio y magnesio, previniendo incrustaciones.</p>
                     </div>
                 </motion.div>
                 <div className="flex justify-center items-center text-center">
@@ -74,19 +76,19 @@ const SecondaryBanner = () => {
                 viewport={{ once: true }}
                 className="flex flex-col justify-center text-start sm:pr-10 lg:pr-40 gap-5 sm:gap-10 text-sm">
                     <div className="flex flex-col gap-1">
-                        <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Sulfato SO4(2-)</h3>
-                        <p className="font-bold text-blue-600 dark:text-blue-400 text-md">400 mg/L</p>
-                        <p className="font-medium text-xs dark:text-white">El sulfato es un macronutriente presente en las células y participa en diversas funciones metabólicas.</p>
+                        <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Ósmosis Inversa</h3>
+                        {/* <p className="font-bold text-blue-600 dark:text-blue-400 text-md">400 mg/L</p> */}
+                        <p className="font-medium text-xs dark:text-white">Remueve hasta el 99% de sales, bacterias, virus y metales pesados, garantizando agua de alta pureza.</p>
                     </div>
                     <div className="flex flex-col gap-1">
-                        <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Nitrato NO3-</h3>
-                        <p className="font-bold text-blue-600 dark:text-blue-400 text-md">4.4 mg/L</p>
-                        <p className="font-medium text-xs dark:text-white">El nitrato es un compuesto que se encuentra en el agua y puede ser perjudicial en concentraciones elevadas. La imagen indica que es saludable beber agua con niveles de nitrato por debajo de 10 mg/L.</p>
+                        <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Generador de Ozono</h3>
+                        {/* <p className="font-bold text-blue-600 dark:text-blue-400 text-md">4.4 mg/L</p> */}
+                        <p className="font-medium text-xs dark:text-white">Desinfecta el agua eliminando microorganismos y proporcionando una mayor seguridad microbiológica.</p>
                     </div>
                     <div className="flex flex-col gap-1">
-                        <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Bicarbonato HCO3-</h3>
-                        <p className="font-bold text-blue-600 dark:text-blue-400 text-md">384 mg/L</p>
-                        <p className="font-medium text-xs dark:text-white">El bicarbonato es un antiácido natural que ayuda a neutralizar el ácido estomacal y aliviar la acidez y la indigestión.</p>
+                        <h3 className="font-bold text-blue-900 dark:text-blue-600 text-lg">Luz Ultravioleta (UV)</h3>
+                        {/* <p className="font-bold text-blue-600 dark:text-blue-400 text-md">384 mg/L</p> */}
+                        <p className="font-medium text-xs dark:text-white">Esteriliza el agua eliminando bacterias y virus sin alterar su composición.</p>
                     </div>
                 </motion.div>
             </div>
