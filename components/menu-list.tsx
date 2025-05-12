@@ -45,19 +45,19 @@ const MenuList = () => {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/productos" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+        <NavigationMenuItem> 
+          <NavigationMenuLink className={navigationMenuTriggerStyle()} asChild>
+            <Link href="/productos">
               Productos
-            </NavigationMenuLink>
-          </Link>
+            </Link>
+          </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/contactanos" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()} asChild>
+            <Link href="/contactanos">
               Contactanos
-            </NavigationMenuLink>
-          </Link>
+            </Link>
+          </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
@@ -66,33 +66,33 @@ const MenuList = () => {
 
 export default MenuList
 
-const components: { title: string; href: string; description: string }[] = [
-    {
-      title: "Envase 625ml",
-      href: "/docs/primitives/alert-dialog",
-      description: "Ideal para llevar, práctico y refrescante."
-    },
-    {
-      title: "Envase 3Lt",
-      href: "/docs/primitives/hover-card",
-      description: "Perfecto para el hogar o la oficina."
-    },
-    {
-      title: "Envase 10Lt",
-      href: "/docs/primitives/progress",
-      description: "Gran capacidad para familias y negocios."
-    },
-    {
-      title: "Envase 20Lt",
-      href: "/docs/primitives/scroll-area",
-      description: "El tamaño ideal para consumo diario y dispensadores."
-    },
-    {
-      title: "Explorar",
-      href: "/productos",
-      description: "Encuentra todos nuestros productos."
-    },
-]
+// const components: { title: string; href: string; description: string }[] = [
+//     {
+//       title: "Envase 625ml",
+//       href: "/docs/primitives/alert-dialog",
+//       description: "Ideal para llevar, práctico y refrescante."
+//     },
+//     {
+//       title: "Envase 3Lt",
+//       href: "/docs/primitives/hover-card",
+//       description: "Perfecto para el hogar o la oficina."
+//     },
+//     {
+//       title: "Envase 10Lt",
+//       href: "/docs/primitives/progress",
+//       description: "Gran capacidad para familias y negocios."
+//     },
+//     {
+//       title: "Envase 20Lt",
+//       href: "/docs/primitives/scroll-area",
+//       description: "El tamaño ideal para consumo diario y dispensadores."
+//     },
+//     {
+//       title: "Explorar",
+//       href: "/productos",
+//       description: "Encuentra todos nuestros productos."
+//     },
+// ]
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,

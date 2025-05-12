@@ -19,31 +19,31 @@ const Products = () => {
       viewport={{ once: true }}
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         <ProductCard
-          title="Botella 500ml"
+          title="Botella 625ml"
           description="Ideal para llevar a cualquier lado, práctico y refrescante."
           imageUrl="/app/img/prod1.png"
-          price={6.90}
-          offerPrice={4.90}
+          price={1.00}
+          offerPrice={null}
         />
         <ProductCard
-          title="Botella 3Lt"
+          title="Botella 3 Litros"
           description="Perfecto para el hogar, compartir con la familia o la oficina."
           imageUrl="/app/img/prod2.png"
-          price={12.90}
-          offerPrice={9.90}
+          price={3.00}
+          offerPrice={null}
         />
         <ProductCard
-          title="Botella 10Lt"
+          title="Botella 10 Litros"
           description="Gran capacidad para familias y negocios."
           imageUrl="/app/img/prod3.png"
-          price={29.90}
-          offerPrice={19.90}
+          price={6.00}
+          offerPrice={null}
         />
         <ProductCard
-          title="Bidon 20Lt"
+          title="Bidon 20 Litros"
           description="El tamaño ideal para consumo diario y dispensadores."
           imageUrl="/app/img/prod4.png"
-          price={25.90}
+          price={30.00}
           offerPrice={null}
         />
       </motion.div>

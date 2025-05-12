@@ -40,8 +40,8 @@ const SecondaryBanner = () => {
             className="flex flex-col justify-center items-center gap-2">
                 <h2 className="font-bold text-xl sm:text-3xl text-center">PROCESO DE PURIFICACION <span className="text-blue-800">DEL AGUA</span></h2>
                 <h3 className="font-semibold text-md sm:text-lg text-blue-600 italic text-center">¿QUÉ HAY DENTRO DE CADA BOTELLA?</h3>
-                <p className="font-semibold text-sm text-gray-600 italic text-center">Nuestro sistema de purificación garantiza agua pura y segura mediante un proceso avanzado que elimina impurezas, olores y sabores no deseados</p>
-                <p className="font-semibold text-sm text-gray-600 italic text-center"><span className="text-blue-800">Resultado:</span> Agua de mesa de alta calidad, libre de impurezas y con un sabor puro y refrescante.</p>
+                <p className="font-semibold text-sm text-gray-400 italic text-center">Nuestro sistema de purificación garantiza agua pura y segura mediante un proceso avanzado que elimina impurezas, olores y sabores no deseados</p>
+                <p className="font-semibold text-sm text-gray-400 italic text-center"><span className="text-blue-700">Resultado:</span> Agua de mesa de alta calidad, libre de impurezas y con un sabor puro y refrescante.</p>
             </motion.div>
             <div className="flex flex-col sm:grid sm:grid-cols-3 justify-center items-center gap-5 sm:gap-0">
                 <motion.div

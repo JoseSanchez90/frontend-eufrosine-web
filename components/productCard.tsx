@@ -24,7 +24,7 @@ export function ProductCard({ title, description, imageUrl, price, offerPrice }:
     <motion.div
     initial={{ opacity: 0, scale: 0.9 }}
     whileInView={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.6 }}
+    transition={{ duration: 0.2 }}
     whileHover={{ scale: 1.05 }} // Efecto al pasar el mouse
     viewport={{ once: true }}>
     <Card className="w-[300px] overflow-hidden bg-blue-50 dark:bg-blue-950 border-blue-100 dark:border-blue-950">
@@ -37,12 +37,12 @@ export function ProductCard({ title, description, imageUrl, price, offerPrice }:
           className="bg-white"
         />
         {offerPrice && price && offerPrice < price && (
-          <Badge className="absolute top-2 right-2 bg-red-500">{discount}% Dscto</Badge>
+          <Badge className="absolute top-2 right-2 text-white bg-red-500">{discount}% Dscto</Badge>
         )}
       </div>
       <CardHeader>
-        <CardTitle className="text-xl font-semibold text-blue-800 dark:text-blue-500">{title}</CardTitle>
-        <CardDescription className="text-blue-900 dark:text-blue-300">{description}</CardDescription>
+        <CardTitle className="text-xl font-semibold text-blue-800 dark:text-blue-400">{title}</CardTitle>
+        <CardDescription className="text-blue-900 dark:text-blue-100">{description}</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="flex items-center justify-between">
