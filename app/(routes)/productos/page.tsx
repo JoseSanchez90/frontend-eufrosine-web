@@ -11,7 +11,8 @@ const Products = () => {
        whileInView={{ opacity: 1, y: 0 }}
        transition={{ duration: 1 }}
        viewport={{ once: true }}
-       className="text-xl sm:text-3xl font-bold text-center mb-8">NUESTROS <span className="text-xl sm:text-3xl font-bold text-blue-800 dark:text-blue-500">PRODUCTOS</span></motion.h1>
+       className="text-xl sm:text-3xl font-bold text-center mb-8">NUESTROS <span className="text-xl sm:text-3xl font-bold text-blue-800 dark:text-blue-500">PRODUCTOS</span>
+      </motion.h1>
       <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
