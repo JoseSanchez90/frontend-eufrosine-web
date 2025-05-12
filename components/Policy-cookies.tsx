@@ -24,8 +24,7 @@ import { MdOutlineChevronRight } from "react-icons/md"
           <div className="max-h-[400px] overflow-y-auto space-y-4 text-sm">
             <div className="font-semibold">Última actualización: 24 de Febrero del 2025</div>
             <div>
-              En <strong>Eufrosine</strong>, utilizamos cookies para mejorar tu experiencia en nuestro sitio web 
-              <strong> www.aguaeufrosine.com</strong>. Al continuar navegando, aceptas el uso de cookies de acuerdo con esta política.
+              En <strong>Eufrosine</strong>, utilizamos cookies para mejorar tu experiencia en nuestro sitio web <strong>www.aguaeufrosine.com</strong>. Al continuar navegando, aceptas el uso de cookies de acuerdo con esta política.
             </div>
   
             <div className="font-semibold">1. ¿QUÉ SON LAS COOKIES?</div>

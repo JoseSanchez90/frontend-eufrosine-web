@@ -25,16 +25,14 @@ import { ArrowRightCircle } from "lucide-react"
           <div className="max-h-[400px] overflow-y-auto space-y-4 text-sm">
             <div className="font-semibold">Última actualización: 16 de Febrero del 2025</div>
             <div>
-              Bienvenido a la empresa PUNTO VIDA pO SAC. Antes de utilizar nuestro sitio web 
-              <strong>www.aguaeufrosine.com</strong>, te pedimos que leas atentamente los siguientes términos y condiciones.
+              Bienvenido a la empresa PUNTO VIDA H2O SAC. Antes de utilizar nuestro sitio web <strong>www.aguaeufrosine.com</strong>, te pedimos que leas atentamente los siguientes términos y condiciones.
             </div>
-
             <div className="font-semibold">1. INFORMACIÓN GENERAL</div>
             <ul className="list-disc pl-4">
               <li className="list-none flex items-center gap-2"><ArrowRightCircle size={18}/> Razón social: PUNTO VIDA H2O SAC</li>
               <li className="list-none flex items-center gap-2"><ArrowRightCircle size={18}/> RUC: 20613393367</li>
               <li className="list-none flex items-center gap-2"><ArrowRightCircle size={18}/> Dirección: Av. Cincuentenario S/N – Hualmay.</li>
-              <li className="list-none flex items-center gap-2"><ArrowRightCircle size={18}/> Correo electrónico de contacto: aguaeufrosine@gmail.com</li>
+              <li className="list-none flex items-center gap-2"><ArrowRightCircle size={18}/> Correo electrónico de contacto: aguademesaeufrosineperu@gmail.com</li>
               <li className="list-none flex items-center gap-2"><ArrowRightCircle size={18}/> Teléfono de contacto: 903565918</li>
             </ul>
 
