@@ -37,7 +37,7 @@ const MainBanner = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="w-full min-h-[550px] flex justify-center items-center px-14">
+            className="w-full min-h-[550px] flex justify-center items-center px-5 py-5 md:py-0 md:px-14">
                 <div className="relative w-full h-full mx-auto p-6 rounded-2xl justify-center overflow-hidden shadow-lg py-14">
                 {/* VIDEO DE FONDO */}
                 <video
@@ -52,12 +52,30 @@ const MainBanner = () => {
                 </video>
 
                 {/* CONTENIDO ENCIMA DEL VIDEO */}
-                <div className="relative z-10 grid sm:grid-cols-2 gap-10 lg:gap-0 justify-between items-center">
-                    <motion.div
+                <div className="relative z-10 grid md:grid-cols-2 gap-10 lg:gap-0 md:justify-between md:items-center">
+                {/* IMAGEN LOGO */}
+                <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1, delay: 1.2 }}
+                className="md:hidden flex justify-center py-4 sm:py-0"
+                >
+                    <div className="flex w-full max-w-md z-10 justify-center">
+                         <Image
+                             src={banner1} // Reemplaza por tu imagen
+                             width={100}
+                             height={100}
+                             alt="banner"
+                             className="w-72 rounded-lg"
+                             priority
+                         />
+                     </div>
+                 </motion.div>
+                <motion.div
                     initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="max-w-2xl grid gap-5 pl-28"
+                    className="max-w-2xl grid gap-5 md:pl-28"
                     >
                     <div>
                         <h2 className="text-xl sm:text-2xl 2xl:text-3xl font-bold text-blue-400 dark:text-blue-500">AGUA PURA</h2>
@@ -72,7 +90,7 @@ const MainBanner = () => {
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1, delay: 1 }}
-                        className="flex flex-row gap-5"
+                        className="flex flex-row gap-2 md:gap-5"
                     >
                         <a href="https://api.whatsapp.com/send?phone=51903565918" target="_blank">
                         <Button className="text-sm sm:text-base dark:text-white bg-green-600 hover:bg-green-500 dark:bg-green-600 dark:hover:bg-green-500 px-6">
@@ -86,26 +104,26 @@ const MainBanner = () => {
                         Ir a tienda <BsArrowRight />
                         </Button>
                     </motion.div>
-                    </motion.div>
+                </motion.div>
 
-                    {/* CAROUSEL U OTRO CONTENIDO */}
-                    <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 1, delay: 1.2 }}
-                    className="flex justify-center py-4 sm:py-0"
-                    >
-                        <div className="w-full max-w-md z-10 flex justify-center">
-                            <Image
-                                src={banner1} // Reemplaza por tu imagen
-                                width={500}
-                                height={500}
-                                alt="banner"
-                                className="w-full rounded-lg"
-                                priority
-                            />
-                        </div>
-                    </motion.div>
+                {/* IMAGEN LOGO */}
+                <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1, delay: 1.2 }}
+                className="hidden md:flex justify-center py-4 sm:py-0"
+                >
+                       <div className="flex w-full max-w-md z-10 justify-center">
+                           <Image
+                            src={banner1} // Reemplaza por tu imagen
+                             width={500}
+                            height={500}
+                            alt="banner"
+                            className="w-full rounded-lg"
+                            priority
+                        />
+                    </div>
+                 </motion.div>
                 </div>
 
                 {/* CAPA OSCURA OPCIONAL */}
