@@ -58,7 +58,7 @@ const MainBanner = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 1.2 }}
-                className="md:hidden flex justify-center py-4 sm:py-0"
+                className="md:hidden flex justify-center"
                 >
                     <div className="flex w-full max-w-md z-10 justify-center">
                          <Image
@@ -66,7 +66,7 @@ const MainBanner = () => {
                              width={100}
                              height={100}
                              alt="banner"
-                             className="w-72 rounded-lg"
+                             className="w-64 rounded-lg"
                              priority
                          />
                      </div>
