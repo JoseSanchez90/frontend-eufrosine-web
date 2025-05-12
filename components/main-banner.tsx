@@ -37,8 +37,8 @@ const MainBanner = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="w-full min-h-[550px] flex justify-center items-center px-5 py-5 md:py-0 md:px-14">
-                <div className="relative w-full h-full mx-auto p-6 rounded-2xl justify-center overflow-hidden shadow-lg py-14">
+            className="w-full min-h-[550px] flex items-center px-5 py-5 md:py-0 md:px-14">
+                <div className="relative w-full h-full mx-auto p-6 rounded-2xl justify-center overflow-hidden shadow-lg sm:py-20 sm:mb-24 2xl:mb-0 2xl:py-14">
                 {/* VIDEO DE FONDO */}
                 <video
                     className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -78,12 +78,12 @@ const MainBanner = () => {
                     className="max-w-2xl grid gap-5 md:pl-28"
                     >
                     <div>
-                        <h2 className="text-xl sm:text-2xl 2xl:text-3xl font-bold text-blue-400 dark:text-blue-500">AGUA PURA</h2>
-                        <h2 className="text-xl sm:text-2xl 2xl:text-3xl font-bold text-blue-400 dark:text-blue-500">BIENESTAR EN TU VIDA</h2>
+                        <h2 className="text-xl sm:text-2xl 2xl:text-3xl font-bold text-blue-300">AGUA PURA</h2>
+                        <h2 className="text-xl sm:text-2xl 2xl:text-3xl font-bold text-blue-300">BIENESTAR EN TU VIDA</h2>
                     </div>
                     <div>
                         <p className="text-sm sm:text-base font-medium text-white">
-                        Descubre la frescura y pureza en cada gota con Agua <span className="text-blue-500 dark:text-blue-500 text-lg">Eu<span className="text-md font-bold text-blue-400">Frosine</span></span>, tu fuente confiable de agua de mesa de alta calidad.
+                        Descubre la frescura y pureza en cada gota con Agua <span className="text-blue-300 dark:text-blue-300 text-lg">Eu<span className="text-md font-bold text-blue-300">Frosine</span></span>, tu fuente confiable de agua de mesa de alta calidad.
                         </p>
                     </div>
                     <motion.div
@@ -119,7 +119,7 @@ const MainBanner = () => {
                              width={500}
                             height={500}
                             alt="banner"
-                            className="w-full rounded-lg"
+                            className="w-full rounded-lg sm:max-w-[320px] 2xl:max-w-[600px]"
                             priority
                         />
                     </div>
@@ -127,7 +127,7 @@ const MainBanner = () => {
                 </div>
 
                 {/* CAPA OSCURA OPCIONAL */}
-                <div className="absolute inset-0 bg-black/60 z-0" />
+                <div className="absolute inset-0 bg-black/40 z-0" />
                 </div>
             </motion.div>
 

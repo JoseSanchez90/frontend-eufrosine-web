@@ -40,8 +40,8 @@ const CarouselTextBanner = () => {
     const router = useRouter()
 
     return ( 
-        <div className="bg-sky-100 dark:bg-sky-800">
-            <Carousel className="w-full h-24 sm:h-20 py-2 max-w-4xl mx-auto" plugins={[
+        <div className="bg-sky-200 dark:bg-sky-950">
+            <Carousel className="w-full h-24 sm:h-20 pt-2 max-w-4xl mx-auto" plugins={[
                 Autoplay({
                     delay: 6000,
                 })
@@ -52,10 +52,10 @@ const CarouselTextBanner = () => {
                             <div>
                                 <Card className="shadow-none border-none bg-transparent">
                                     <CardContent className="flex flex-col justify-center items-center">
-                                        <div className="flex flex-row justify-center text-center items-center gap-2 text-xs sm:text-sm text-gray-800 dark:text-gray-200">
+                                        <div className="flex flex-row justify-center text-center items-center gap-2 text-xs  text-gray-800 dark:text-gray-200">
                                             {name}
                                             </div>
-                                        <div className="flex flex-row justify-center text-center items-center gap-2 text-xs sm:text-sm text-gray-800 dark:text-gray-200">
+                                        <div className="flex flex-row justify-center text-center items-center gap-2 text-xs  text-gray-800 dark:text-gray-200">
                                             {description}
                                         </div>
                                         <div className="text-xs sm:text-sm text-center text-gray-800 dark:text-white">
